@@ -19,29 +19,27 @@ To ensure high predictive accuracy and interpretability, multiple classification
 
 ## 📊 Exploratory Data Analysis & Visual Insights
 
-### 1. Satisfaction by Travel Class & Flight Distance
-![Satisfaction Distribution](path/to/your/class_distance_distribution.png)
-*Figure 1: Proportion of satisfied vs. dissatisfied passengers categorized by travel class and flight distance.*
+### 1.Inflight entertainment impact on customers satisfaction
+![Satisfaction vs inflight entertainment](assets/img1.png)
+*Figure 1: The figure shows a logistics relation along the satisfaction and inflight-entertainment.*
 
-### 2. What Drives Passenger Happiness? (Feature Importance)
-![Feature Importance](path/to/your/airline_feature_importance.png)
-*Figure 2: The top service factors driving customer satisfaction, extracted from the optimized XGBoost model. (e.g., Inflight Wi-Fi, Online Boarding, Legroom).*
-
+### 2.Feature Importance
+![Feature Importance](assets/img2.png)
+*Figure 2: The figure clearly shows that the highest impacting key factor on satisfation are seat-comfort , inflight-entertaiment and leg-room service.*
 
 ## Model Performance & Evaluation
 
 The models were evaluated using Accuracy, Precision, Recall, and the F1-Score. For this business case, maximizing overall **Accuracy** and **Precision** ensures the airline correctly identifies satisfied customers without misallocating resources to areas that don't need improvement.
 
+                    
 | Model | Accuracy | Precision | Recall | F1-Score |
 | :--- | :--- | :--- | :--- | :--- |
-| **Logistic Regression** | 0.00 | 0.00 | 0.00 | 0.00 |
-| **Decision Tree** | 0.00 | 0.00 | 0.00 | 0.00 |
-| **Random Forest** | 0.00 | 0.00 | 0.00 | 0.00 |
-| **XGBoost** | **0.00** | **0.00** | **0.00** | **0.00** |
+| **Logistic Regression** | 0.77 | 0.76 | 0.84 | 0.80 |
+| **Tuned Decision Tree** | 0.93 | 0.94 | 0.95 | 0.94 |
+| **Tuned Random Forest** | 0.91 | 0.91 | 0.91 | 0.92 |
+| **Tuned XGBoost** | **0.88** | **0.86** | **0.94** | **0.90** |
 
-> **Conclusion:** The XGBoost model demonstrated the highest predictive capability, effectively decoding the complex matrix of passenger feedback and flight logistics. 
-
----
+> **Conclusion:** The Tuned decision tree model demonstrated the highest predictive capability, effectively decoding the complex matrix of passenger satisfaction while it may account for overfitting the data. 
 
 ## Environment Setup & Installation
 
@@ -51,3 +49,23 @@ To ensure reproducibility, please run this project within an isolated virtual en
 ```bash
 git clone [https://github.com/yourusername/xyz-airlines-satisfaction.git](https://github.com/yourusername/xyz-airlines-satisfaction.git)
 cd xyz-airlines-satisfaction
+```
+2. Create a Virtual Environment
+ * For Windows:
+   ``` bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+ * For MacOS And Linux:
+   ``` bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+3. Install the dependencies
+   ``` bash
+   pip install --upgrade pip
+   pip install -r requirements.txt
+   ```
+4. Run the Jupiter Notebook.
+
+
