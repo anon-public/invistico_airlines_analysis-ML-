@@ -35,9 +35,9 @@ The models were evaluated using Accuracy, Precision, Recall, and the F1-Score. F
 | Model | Accuracy | Precision | Recall | F1-Score |
 | :--- | :--- | :--- | :--- | :--- |
 | **Logistic Regression** | 0.77 | 0.76 | 0.84 | 0.80 |
-| **Tuned Decision Tree** | 0.93 | 0.94 | 0.95 | 0.94 |
+| **Tuned Decision Tree** | **0.93** | **0.94** | **0.95** | **0.94** |
 | **Tuned Random Forest** | 0.91 | 0.91 | 0.91 | 0.92 |
-| **Tuned XGBoost** | **0.88** | **0.86** | **0.94** | **0.90** |
+| **Tuned XGBoost** | 0.88 | 0.86| 0.94 | 0.90 |
 
 > **Conclusion:** The Tuned decision tree model demonstrated the highest predictive capability, effectively decoding the complex matrix of passenger satisfaction while it may account for overfitting the data. 
 
@@ -45,12 +45,12 @@ The models were evaluated using Accuracy, Precision, Recall, and the F1-Score. F
 
 To ensure reproducibility, please run this project within an isolated virtual environment.
 
-### 1. Clone the Repository
+#### 1. Clone the Repository
 ```bash
 git clone [https://github.com/yourusername/xyz-airlines-satisfaction.git](https://github.com/yourusername/xyz-airlines-satisfaction.git)
 cd xyz-airlines-satisfaction
 ```
-2. Create a Virtual Environment
+#### 2. Create a Virtual Environment
  * For Windows:
    ``` bash
    python -m venv venv
@@ -61,11 +61,11 @@ cd xyz-airlines-satisfaction
    python3 -m venv venv
    source venv/bin/activate
    ```
-3. Install the dependencies
+#### 3. Install the dependencies
    ``` bash
    pip install --upgrade pip
    pip install -r requirements.txt
    ```
-4. Run the Jupiter Notebook.
+#### 4. Run the Jupiter Notebook.
 
 
