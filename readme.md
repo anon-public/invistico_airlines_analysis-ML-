@@ -20,11 +20,13 @@ To ensure high predictive accuracy and interpretability, multiple classification
 ## 📊 Exploratory Data Analysis & Visual Insights
 
 ### 1.Inflight entertainment impact on customers satisfaction
-![Satisfaction vs inflight entertainment](assets/img1.png)
+<img width="698" height="527" alt="image" src="https://github.com/user-attachments/assets/3f65751a-30e1-48f3-b86c-bed3720404af" />
+
 *Figure 1: The figure shows a logistics relation along the satisfaction and inflight-entertainment.*
 
 ### 2.Feature Importance
-![Feature Importance](assets/img2.png)
+<img width="777" height="462" alt="image" src="https://github.com/user-attachments/assets/aaa629da-52b6-4991-b8c4-c45c1cdb568e" />
+
 *Figure 2: The figure clearly shows that the highest impacting key factor on satisfation are seat-comfort , inflight-entertaiment and leg-room service.*
 
 ## Model Performance & Evaluation
@@ -38,6 +40,9 @@ The models were evaluated using Accuracy, Precision, Recall, and the F1-Score. F
 | **Tuned Decision Tree** | **0.93** | **0.94** | **0.95** | **0.94** |
 | **Tuned Random Forest** | 0.91 | 0.91 | 0.91 | 0.92 |
 | **Tuned XGBoost** | 0.88 | 0.86| 0.94 | 0.90 |
+
+<img width="577" height="540" alt="image" src="https://github.com/user-attachments/assets/9973b465-8308-428a-bec7-c2533f2a30d0" />
+
 
 > **Conclusion:** The Tuned decision tree model demonstrated the highest predictive capability, effectively decoding the complex matrix of passenger satisfaction while it may account for overfitting the data. 
 
