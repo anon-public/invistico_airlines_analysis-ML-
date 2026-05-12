@@ -52,7 +52,7 @@ To ensure reproducibility, please run this project within an isolated virtual en
 
 #### 1. Clone the Repository
 ```bash
-git clone [https://github.com/anon-public/xyz-airlines-satisfaction.git](https://github.com/anon-public/invistico_airlines_analysis-ML-.git)
+git clone [https://github.com/YOURUSERNAME/xyz-airlines-satisfaction.git](https://github.com/YOURUSERNAME/invistico_airlines_analysis-ML-.git)
 cd invistico_airlines_analysis-ML-
 ```
 #### 2. Create a Virtual Environment
